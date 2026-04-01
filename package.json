@@ -24,26 +24,13 @@
       "[production]": {
         "auth": "xsuaa"
       },
-      "auth": {
-        "strategy":"mocked",
-        "users":{
-          "manager":{
-            "password":"dummy-pass",
-            "roles":["Manager"]
-          },
-          "employee":{
-            "password":"dummy-pass",
-            "roles":["Employee"]
-          }
-        }
-      },
-
       "db": {
         "kind": "sqlite",
         "credentials": {
           "url": "db.sqlite"
         }
       },
+      "auth": "xsuaa",
       "connectivity": true,
       "destinations": true,
       "html5-repo": true,

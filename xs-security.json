@@ -1,6 +1,32 @@
 {
-  "scopes": [],
+  "xsappname":"bookstall-local-testing",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.employee",
+      "description": "employee"
+    },
+    {
+      "name": "$XSAPPNAME.Manager",
+      "description": "Manager"
+    }
+  ],
   "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "role-templates": [
+    {
+      "name": "employee",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.employee"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "Manager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.Manager"
+      ],
+      "attribute-references": []
+    }
+  ]
 }

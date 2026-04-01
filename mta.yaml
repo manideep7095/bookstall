@@ -68,6 +68,11 @@ resources:
           credential-types:
             - "binding-secret"
             - "x509"
+        role-collections:
+          - name: 'Manager (bookstall ${org}-${space})'
+            description: 'generated'
+            role-template-references:
+              - '$XSAPPNAME.Manager'
   - name: bookstall-db
     type: com.sap.xs.hdi-container
     parameters:

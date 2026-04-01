@@ -3,8 +3,17 @@ using { northwind as external } from './external/northwind';
 @path : '/service/bookstallService'
 service bookstallService
 {
-     @restrict : [{ grant : 'READ', to : 'Manager'}]
-    entity books as projection on my.Books;
+     @restrict : [
+        {grant : 'READ' , to :'employee' },
+        //  where : (Createdby = $user)
+       
+        { grant : 'WRITE', to : 'Manager'},
+        {grant : 'addStock', to : 'Manager'},
+        {grant: 'getStock'}]
+    entity books as projection on my.Books actions{
+        function getStock() returns Integer;
+        action addStock(quantity : Integer ) returns books;
+    };
      @requires :['Manager']
     entity authors as projection on my.Authors;
 entity Products as projection on external.Products;

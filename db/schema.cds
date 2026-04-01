@@ -4,6 +4,8 @@ namespace bookstall;
 entity Books
 {
     key ID : UUID;
+    Createdby : String @cds.on.insert : $user;
+    DateTime : DateTime @cds.on.insert : $now;
     Title : String(100);
     Description : String(100);
     price : Integer;

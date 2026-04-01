@@ -1,6 +1,23 @@
 get http://localhost:4004/service/bookstallService/books
-Authorization: Basic employee:dummy-pass
+Authorization: Basic manager:dummy-pass
+# Authorization: Basic employee:dummy-pass
 
 ###
 post http://localhost:4004/service/bookstallService/books
-Authorization: Basic employee:dummy-pass
+# Authorization: Basic employee:dummy-pass
+Authorization: Basic manager:dummy-pass
+Content-Type: application/json
+
+{
+    
+    "Title": "Book4",
+      "Description": "Frontend development with UI5",
+      "price": 799,
+      "stock": 10,
+      "author_ID": "caabdb3f-7e0d-4994-860a-f72fc775ff22",
+            "IsActiveEntity": true
+}
+# {
+#   "ID": "4a5323ed-a1d2-4704-b9da-0a646bb83d92",
+#       "stock": 5
+# }
