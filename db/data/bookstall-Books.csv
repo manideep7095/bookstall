@@ -1,0 +1,6 @@
+ID,Title,Description,price,stock,author_ID
+4a61cf35-42a1-4201-9424-bb596a3560e6, ABAP Basics, Beginner guide to ABAP programming, 499, 25, 2feccaf6-71e1-4d37-859b-517fed9d2a49
+5201f3dc-9484-44f6-ab58-417b4337cffd, SAP CDS Guide, Complete CDS views explanation, 699, 15, b5b14e3b-1def-442f-a200-7a3a667b7959
+ff92fde7-e6b5-4f0d-9ffb-cf15d17bf234, OData Services, Building OData in SAP, 599, 20, d8c9a745-525d-4e37-8e0a-31790b0d7903
+22a73ffc-c1d3-45e1-a356-a44ac865ed52, SAP UI5, Frontend development with UI5, 799, 10, caabdb3f-7e0d-4994-860a-f72fc775ff22
+de595947-9845-41cd-a914-62494cb00355, BTP Development, SAP BTP end-to-end guide, 899, 8, 2ce5e08b-91d2-4476-af7f-dc15acebd075

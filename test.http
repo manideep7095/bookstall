@@ -1,0 +1,6 @@
+get http://localhost:4004/service/bookstallService/books
+Authorization: Basic employee:dummy-pass
+
+###
+post http://localhost:4004/service/bookstallService/books
+Authorization: Basic employee:dummy-pass
